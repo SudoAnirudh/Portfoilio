@@ -1,0 +1,8 @@
+.portfolio-item { /* Assign this class to your portfolio item elements in HTML */
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d; /* Allows child elements to be transformed in 3D space */
+}
+
+.portfolio-item:hover {
+  transform: perspective(1000px) rotateY(10deg) translateZ(30px) scale(1.05); /* Example 3D hover effect */
+}
